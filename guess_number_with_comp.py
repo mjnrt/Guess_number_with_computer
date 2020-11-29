@@ -8,13 +8,13 @@ def guessing_number():
     while guessing:
         guess = int((max_ - min_) / 2) + min_
         print(f'Zgaduję: {guess}')
-        answear = input("Tell your information to computer [too much, too small, you guessed ")
-        if answear == 'you guessed':
+        answer = input("Tell your information to computer [too much, too small, you guessed ")
+        if answer == 'you guessed':
             guessing = False
             print('I win !!')
-        elif answear == 'too much':
+        elif answer == 'too much':
             max_ = guess
-        elif answear == 'to small':
+        elif answer == 'to small':
             min_ = guess
         else:
             print("Don't cheat!")
